@@ -1,0 +1,107 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+:root {
+	--blue: #467fd0;
+	--indigo: #6610f2;
+	--purple: #7c69ef;
+	--pink: #e83e8c;
+	--red: #df4759;
+	--orange: #fd9644;
+	--yellow: #ffc107;
+	--green: #42ba96;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #869ab8;
+	--gray-dark: #384c74;
+	--light-blue: #69d2f1;
+	--primary: #028037;
+	--secondary: #FFDE59;
+	--success: #42ba96;
+	--info: #467fd0;
+	--warning: #ffc107;
+	--danger: #df4759;
+	--light: #f1f4f8;
+	--dark: #161c2d;
+	--default: #d9e2ef;
+	--notice: #467fd0;
+	--error: #df4759;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+body, .font-sans {
+	/* font-family: 'Nunito Regular'; */
+	font-weight: 400;
+}
+
+.text-primary {
+	@apply text-yellow-500;
+}
+.text-secondary {
+	color: var(--secondary)!important;
+}
+.bg-primary {
+	background-color: var(--primary)!important;
+}
+.sidebar.sidebar-pills .nav-link.active, .sidebar.sidebar-pills .nav-link:hover {
+	color: var(--orange)!important;
+}
+
+.sidebar.sidebar-pills .nav-link.active .nav-icon, .sidebar.sidebar-pills .nav-link:hover .nav-icon {
+	color: var(--orange)!important;
+}
+
+.btn-primary, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+	@apply bg-yellow-500;
+}
+.btn-primary, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+	@apply border-yellow-500;
+}
+.btn-primary:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	@apply bg-green-700 border-green-700;
+}
+
+.btn-link {
+	@apply text-yellow-500;
+}
+.btn-link:hover {
+	@apply text-green-500;
+}
+
+a {
+	@apply text-yellow-500;
+}
+a:hover {
+	@apply text-green-500;
+}
+
+.bg-dark {
+	background-color: #030a1b!important
+}
+.bg-dark2 {
+	background-color: #161c2d;
+}
+
+.dataTables_filter input,
+.dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select, .form-control,
+[type='checkbox'], [type='radio']
+{
+	@apply bg-dark2;
+}
+.dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:focus, .dataTables_wrapper .dataTables_length select:focus, .form-control:focus,
+[type='checkbox'], [type='radio']
+{
+	@apply bg-dark2;
+}
+
