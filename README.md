@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/FeelsGoodDaySir/laravel-socialite-backpack-themer-boilerplate.svg?branch=main)](https://travis-ci.com/FeelsGoodDaySir/laravel-socialite-backpack-themer-boilerplate)
+
 ## Requirement
 - npm
 - composer
