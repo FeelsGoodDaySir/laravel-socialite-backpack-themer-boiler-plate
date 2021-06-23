@@ -3,11 +3,15 @@ language: php
 php:
   - 8.0
 
+services:
+  - postgresql
+
 before_script:
   - travis_retry composer self-update
   - travis_retry composer install --prefer-source --no-interaction
   - cp .env.example .env
   - php artisan key:generate
+  - psql -c 'create database laravel_socialite_backpack_themer_boilerplate;' -U postgres
 
 script:
   - vendor/bin/phpunit
