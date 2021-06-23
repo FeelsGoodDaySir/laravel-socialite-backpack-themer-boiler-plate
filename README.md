@@ -8,7 +8,7 @@
 
 ## Installation
 
-$ git clone https://github.com/FeelsGoodDaySir/laravel-backpack-themer-boiler-plate.git
+$ git clone https://github.com/FeelsGoodDaySir/laravel-backpack-themer-boilerplate.git
 
 $ npm install
 
