@@ -73,12 +73,12 @@ class DatabaseSeeder extends Seeder
                 'permissions' =>  array_merge($user_permissions, $role_permissions, $permission_permissions)
             ],
             [ 'name' => 'administrator', 'permissions' => [ 'admin' ] ],
-            [ 'name' => 'product manager' ],
-            [ 'name' => 'editor' ],
-            [ 'name' => 'finance' ],
-            [ 'name' => 'customers service' ],
-            [ 'name' => 'jobs manager' ],
-            [ 'name' => 'customer' ],
+            [ 'name' => 'product manager', 'permissions' => [ 'admin' ] ],
+            [ 'name' => 'editor', 'permissions' => [ 'admin' ] ],
+            [ 'name' => 'finance', 'permissions' => [ 'admin' ] ],
+            [ 'name' => 'customers service', 'permissions' => [ 'admin' ] ],
+            [ 'name' => 'jobs manager', 'permissions' => [ 'admin' ] ],
+            [ 'name' => 'customer', 'permissions' => [ 'admin' ] ],
         ];
         Role::truncate();
         foreach ( $roles as $role ) {
@@ -93,11 +93,11 @@ class DatabaseSeeder extends Seeder
 
         $users = [
             [
-                'name'     => 'User Manager',
-                'email'    => 'user-manager@localhost',
+                'name'     => 'Admin',
+                'email'    => 'admin@localhost',
                 'password' => Hash::make('password'),
                 'roles' => [
-                    'user manager'
+                    'administrator'
                 ]
             ], [
                 'name'     => 'Customer',

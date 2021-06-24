@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "feelsgooddaysir/laravel-socialite-backpack-themer-boilerplate",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel Framework with Socialite Backpack Themer boilerplate.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
